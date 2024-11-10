@@ -6,10 +6,12 @@
 html {
   scroll-behavior: smooth;
 }
+
 .mydiv{
   height: 300px;
   width: 600px;
 }
+
 .test{
   height: 100px;
   padding: 10px 10px 10px 10px;

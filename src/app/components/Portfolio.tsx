@@ -1,4 +1,3 @@
-
 import React from "react";
 import Image from "next/image";
 import { caveat } from "../font";
@@ -32,7 +31,7 @@ function Portfolio() {
                 </Link>
               </div>
               <p className="mt-6 text-xl">
-                I transformed this Figma template into a responsive fashion website layout using Next.js. The design is clean and modern, with a bold header and engaging "Explore Now" call-to-action, perfect for attracting fashion enthusiasts.
+                I transformed this Figma template into a responsive fashion website layout using Next.js. The design is clean and modern, with a bold header and engaging &quot;Explore Now&quot; call-to-action, perfect for attracting fashion enthusiasts.
               </p>
             </div>
 
@@ -117,7 +116,7 @@ function Portfolio() {
                 </Link>
               </div>
               <p className="mt-6 text-xl">
-                Figma template to Next.js, Interactive elements like the "Download Resume" button and navigation links are now fully functional.
+                Figma template to Next.js, Interactive elements like the &quot;Download Resume&quot; button and navigation links are now fully functional.
               </p>
             </div>
           </div>
@@ -128,6 +127,3 @@ function Portfolio() {
 }
 
 export default Portfolio;
-
-
-
