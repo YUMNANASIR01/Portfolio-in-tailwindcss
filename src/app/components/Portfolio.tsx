@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import Image from "next/image";
 import { caveat } from "../font";
@@ -17,16 +19,16 @@ function Portfolio() {
             I am a skilled frontend and backend developer with experience in building responsive, user-friendly interfaces using React, Next.js, and Tailwind CSS...
           </p>
 
-          <div className="w-full mt-24 grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-28">
-            <div className="flex flex-col">
-              <div className="w-full rounded-3xl overflow-hidden transition-all duration-[0.9s]">
-                <Link href={"https://github.com/YUMNANASIR01/Multipage-website.git"}>
+          <div className="w-full mt-24 grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-28 ">
+            <div className="flex flex-col ">
+              <div className="w-full  overflow-hidden transition-all duration-[0.9s] mydiv1">
+                <Link href={"https://multipage-website-viro.vercel.app/"}>
                   <Image
                     src="/myImage/project-0.jpeg"
                     alt="Laptop, Phone and Camera"
-                    width={500}
-                    height={500}
-                    className="w-full rounded-3xl transition-all duration-[0.9s] hover:scale-110 hover:-rotate-[5deg]"
+                    width={600}
+                    height={600}
+                    className="w-full  transition-all duration-[0.9s] hover:scale-110 hover:-rotate-[5deg]"
                   />
                 </Link>
               </div>
@@ -36,14 +38,14 @@ function Portfolio() {
             </div>
 
             <div className="flex flex-col">
-              <div className="w-full rounded-3xl overflow-hidden transition-all duration-[0.9s]">
+              <div className="w-full  overflow-hidden transition-all duration-[0.9s] mydiv1">
                 <Link href={"https://project-by-html-and-css.vercel.app/"}>
                   <Image
                     src="/myImage/project-2.jpeg"
                     alt="Laptop, Phone and Camera"
                     width={500}
                     height={500}
-                    className="w-full rounded-3xl transition-all duration-[0.9s] hover:scale-110 hover:-rotate-[5deg]"
+                    className="w-full  transition-all duration-[0.9s] hover:scale-110 hover:-rotate-[5deg]"
                   />
                 </Link>
               </div>
@@ -53,14 +55,14 @@ function Portfolio() {
             </div>
 
             <div className="flex flex-col">
-              <div className="w-full rounded-3xl overflow-hidden transition-all duration-[0.9s]">
+              <div className="w-full  overflow-hidden transition-all duration-[0.9s] mydiv1">
                 <Link href={"https://html-and-css-mu.vercel.app/"}>
                   <Image
                     src="/myImage/project-5.jpeg"
                     alt="Laptop, Phone and Camera"
                     width={500}
                     height={500}
-                    className="w-full rounded-3xl transition-all duration-[0.9s] hover:scale-110 hover:-rotate-[5deg]"
+                    className="w-full  transition-all duration-[0.9s] hover:scale-110 hover:-rotate-[5deg]"
                   />
                 </Link>
               </div>
@@ -70,14 +72,14 @@ function Portfolio() {
             </div>
 
             <div className="flex flex-col">
-              <div className="w-full rounded-3xl overflow-hidden transition-all duration-[0.9s]">
+              <div className="w-full  overflow-hidden transition-all duration-[0.9s] mydiv1">
                 <Link href={"https://dynamic-routing-rho-wine.vercel.app/"}>
                   <Image
                     src="/myImage/project-6.jpeg"
                     alt="Laptop, Phone and Camera"
                     width={500}
                     height={500}
-                    className="w-full rounded-3xl transition-all duration-[0.9s] hover:scale-110 hover:-rotate-[5deg]"
+                    className="w-full  transition-all duration-[0.9s] hover:scale-110 hover:-rotate-[5deg]"
                   />
                 </Link>
               </div>
@@ -87,14 +89,14 @@ function Portfolio() {
             </div>
 
             <div className="flex flex-col">
-              <div className="w-full h-full rounded-3xl overflow-hidden transition-all duration-[0.9s]">
+              <div className="w-full h-full  overflow-hidden transition-all duration-[0.9s] mydiv1">
                 <Link href={"https://tailwindcss-calculator-chts.vercel.app/"}>
                   <Image
                     src="/myImage/project-1.jpeg"
                     alt="Laptop, Phone and Camera"
                     width={900}
                     height={500}
-                    className="w-full rounded-3xl transition-all duration-[0.9s] hover:scale-110 hover:-rotate-[5deg]"
+                    className="w-full  transition-all duration-[0.9s] hover:scale-110 hover:-rotate-[5deg]"
                   />
                 </Link>
               </div>
@@ -104,14 +106,14 @@ function Portfolio() {
             </div>
 
             <div className="flex flex-col">
-              <div className="w-full rounded-3xl overflow-hidden transition-all duration-[0.9s]">
-                <Link href={"https://assingment-4-ak6d.vercel.app/"}>
+              <div className="w-full  overflow-hidden transition-all duration-[0.9s] mydiv1">
+                <Link href={"https://assingment-4-m8gq.vercel.app/"}>
                   <Image
                     src="/myImage/project-4.jpeg"
                     alt="Laptop, Phone and Camera"
                     width={600}
                     height={400}
-                    className="w-full h-full object-cover rounded-3xl transition-all duration-[0.9s] hover:scale-110 hover:-rotate-[5deg]"
+                    className="w-full h-full object-cover  transition-all duration-[0.9s] hover:scale-110 hover:-rotate-[5deg]"
                   />
                 </Link>
               </div>
