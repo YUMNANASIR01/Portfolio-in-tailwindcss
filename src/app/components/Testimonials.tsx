@@ -1,59 +1,69 @@
-import React from 'react';
-import Image from 'next/image';
+
+
+import React from "react";
+import Image from "next/image";
 
 function Testimonials() {
+  const testimonials = [
+    {
+      src: "/myImage/pic1.jpg",
+      alt: "Alice",
+      title: "Alice",
+      role: "JavaScript Developer",
+    },
+    {
+      src: "/myImage/pic2.jpg",
+      alt: "Ben",
+      title: "Ben",
+      role: "Android Developer",
+    },
+    {
+      src: "/myImage/pic3.jpg",
+      alt: "Charlie",
+      title: "Charlie",
+      role: "iOS Developer",
+    },
+  ];
+
   return (
-   <>
-     <section id="testimonials" className="bg-[#424140] py-40 px-4 md:px-8">
-      <div className="text-white text-center">
-        <h4 className="text-white text-4xl lg:text-5xl font-[Caveat]  font-bold">
-          <span>
-            <span className="text-[purple]">W</span>hat{' '}
-            <span className="text-[purple]">O</span>ther{' '}
-            <span className="text-[purple]">P</span>eople{' '}
-            <span className="text-[purple]">S</span>ay
-          </span>
-        </h4>
-
-
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { src: '/myImage/pic1.jpg', alt: 'Alice', title: 'Alice', role: 'javascript developer' },
-              { src: '/myImage/pic2.jpg', alt: ' Ben', title: ' Ben', role: 'android developer' },
-              { src: '/myImage/pic3.jpg', alt: 'Charlie', title: 'Charlie', role: 'IOS developer' },
-             
-            ].map((person, index) => (
-              <div
-                key={index}
-                className="mx-auto py-8 px-2 md:px-4 border-t-[3px] border-solid border-light-beige rounded-2xl select-none bg-[#1a1a1a] cursor-grab flex flex-col justify-center items-center"
-              >
-                <div className="w-[10rem] border-[3px] border-solid border-text-[#a9927d]  p-4 height-[20px] test">
-                  <Image
-                    src={person.src}
-                    alt={person.alt}
-                    width={280}
-                    height={200}
-                    className="w-full h-full "
-                  />
-                </div>
-                <p className="mt-4">{person.title}</p>
-                <p className="my-4 text-[purple]">{person.role}</p>
-                <p className="w-[95%] md:w-[98%] mx-auto mb-6 leading-7 text-center font-medium">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, dolorum odio magni possimus corrupti molestiae labore voluptatum ut autem
-                </p>
-              </div>
-            ))}
+    <>
+      <section id="testimonials" className="bg-[#0a0908] py-20 px-4 md:px-8">
+        <div className="text-center">
+          <h4 className="text-white text-4xl lg:text-5xl font-caveat font-bold mb-8">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
+              What Other People Say
+            </span>
+          </h4>
         </div>
-      </div>
-    </section>
-   </>
+
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          {testimonials.map((person, index) => (
+            <div
+              key={index}
+              className="p-6 bg-[#1a1a1a] rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center"
+            >
+              <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-purple-500">
+                <Image
+                  src={person.src}
+                  alt={person.alt}
+                  width={150}
+                  height={150}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h5 className="mt-6 text-xl text-white">{person.title}</h5>
+              <p className="mt-2 text-purple-500">{person.role}</p>
+              <p className="mt-4 text-gray-400 text-sm leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore, dolorum odio magni possimus corrupti molestiae labore
+                voluptatum ut autem.
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
 
 export default Testimonials;
-
-
-
-
-
-

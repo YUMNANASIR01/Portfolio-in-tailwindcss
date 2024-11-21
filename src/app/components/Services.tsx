@@ -1,80 +1,66 @@
+
 import React from "react";
-import { FaBullhorn, FaPaintBrush, FaCode, FaSearch } from "react-icons/fa"; // Import icons from react-icons
+import { FaBullhorn, FaPaintBrush, FaCode, FaSearch } from "react-icons/fa";
 
 function Services() {
+  const servicesData = [
+    {
+      icon: <FaBullhorn />,
+      title: "branding",
+      description:
+        "Enhance your brand identity with compelling strategies and visuals that resonate with your audience.",
+    },
+    {
+      icon: <FaPaintBrush />,
+      title: "design",
+      description:
+        "Create modern, user-friendly designs tailored to deliver seamless user experiences.",
+    },
+    {
+      icon: <FaCode />,
+      title: "development",
+      description:
+        "Build efficient, scalable web solutions with clean and maintainable code.",
+    },
+    {
+      icon: <FaSearch />,
+      title: "SEO",
+      description:
+        "Optimize your web presence to rank higher and drive organic traffic to your site.",
+    },
+  ];
+
   return (
     <>
-      <section id="services" className="py-40 px-2 md:px-8 bg-[#bc844d]">
+      <section id="services" className="py-20 px-6 md:px-12 bg-gradient-to-b from-gray-800 to-gray-900">
         <div className="text-center">
-          <h4 className="text-white text-4xl lg:text-5xl font-[Caveat]">
-            <span className="">
-              <span className="text-light-beige capitalize">w</span>hat{" "}
-              <span className="text-light-beige capitalize">I</span>{" "}
-              <span className="text-light-beige capitalize">d</span>o{" "}
-              <span className="text-light-beige capitalize">f</span>or{" "}
-              <span className="text-light-beige capitalize">c</span>lients
+          <h4 className="text-white text-4xl lg:text-5xl font-caveat">
+            <span>
+              <span className="text-purple-500 capitalize">w</span>hat{" "}
+              <span className="text-purple-500 capitalize">I</span>{" "}
+              <span className="text-purple-500 capitalize">d</span>o{" "}
+              <span className="text-purple-500 capitalize">f</span>or{" "}
+              <span className="text-purple-500 capitalize">c</span>lients
             </span>
           </h4>
-          <p className="w-[90%] lg:w-[80%] mt-6 mx-auto text-white text-sm lg:text-lg leading-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            deserunt laudantium officia fuga ipsam quasi corrupti in numquam
-            dolor libero explicabo, inventore aperiam, commodi et!
+          <p className="mt-4 lg:mt-6 mx-auto w-[90%] lg:w-[60%] text-gray-300 text-sm lg:text-lg leading-7">
+            I offer a range of services designed to enhance your brand and
+            digital presence, leveraging creativity, technical expertise, and
+            strategic insights to achieve your goals.
           </p>
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4 text-start">
-            
-            <div className="rounded-xl py-6 px-4 bg-[#222] flex flex-col justify-between items-center cursor-pointer transition-all duration-[1.2s] hover:bg-[#444]">
-              <div className="w-full mx-0 text-start flex justify-center">
-                <FaBullhorn className="text-white text-6xl" /> {/* Branding Icon */}
-              </div>
-              <div className="w-full mt-12 text-white">
-                <h4 className="text-2xl capitalize mb-4">branding</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt deserunt laudantium officia fuga ipsam quasi.
-                </p>
-              </div>
-            </div>
+        </div>
 
-            <div className="rounded-xl py-6 px-4 bg-[#222] flex flex-col justify-between items-center cursor-pointer transition-all duration-[1.2s] hover:bg-[#444]">
-              <div className="w-full mx-0 text-start flex justify-center">
-                <FaPaintBrush className="text-white text-6xl" /> {/* Design Icon */}
-              </div>
-              <div className="w-full mt-12 text-white">
-                <h4 className="text-2xl capitalize mb-4">design</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt deserunt laudantium officia fuga ipsam quasi.
-                </p>
-              </div>
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {servicesData.map((service, index) => (
+            <div
+              key={index}
+              className="rounded-xl p-6 bg-gray-800 shadow-lg transition-transform transform hover:scale-105 hover:bg-gray-700 text-center"
+            >
+              <div className="text-6xl text-purple-500 mb-6">{service.icon}</div>
+              <h4 className="text-xl text-white capitalize mb-4">{service.title}</h4>
+              <p className="text-sm text-gray-300">{service.description}</p>
             </div>
-
-            <div className="rounded-xl py-6 px-4 bg-[#222] flex flex-col justify-between items-center cursor-pointer transition-all duration-[1.2s] hover:bg-[#444]">
-              <div className="w-full mx-0 text-start flex justify-center">
-                <FaCode className="text-white text-6xl" /> {/* Development Icon */}
-              </div>
-              <div className="w-full mt-12 text-white">
-                <h4 className="text-2xl capitalize mb-4">development</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt deserunt laudantium officia fuga ipsam quasi.
-                </p>
-              </div>
-            </div>
-
-            <div className="rounded-xl py-6 px-4 bg-[#222] flex flex-col justify-between items-center cursor-pointer transition-all duration-[1.2s] hover:bg-[#444]">
-              <div className="w-full mx-0 text-start flex justify-center">
-                <FaSearch className="text-white text-6xl" /> {/* SEO Icon */}
-              </div>
-              <div className="w-full mt-12 text-white">
-                <h4 className="text-2xl capitalize mb-4">SEO</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt deserunt laudantium officia fuga ipsam quasi.
-                </p>
-              </div>
-            </div>
-
-          </div>
+          ))}
         </div>
       </section>
     </>
