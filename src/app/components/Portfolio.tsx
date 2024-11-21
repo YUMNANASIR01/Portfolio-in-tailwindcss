@@ -65,7 +65,7 @@ function Portfolio() {
                 "Visually appealing and functional calculator design with smooth interactions and a modern interface.",
             },
             {
-              link: "https://assingment-4-ak6d.vercel.app/",
+              link: "https://assingment-4-bxbb.vercel.app/",
               src: "/myImage/project-4.jpeg",
               description:
                 "Figma template to Next.js with interactive features like 'Download Resume' and fully functional navigation links.",
